@@ -3,7 +3,7 @@ import image from '../images/name.png'
 import BottomSide from './BottomSide';
 function Header() {
   return (
-    <div className="flex flex-col pt-8 pl-3.5 pr-8">
+    <div className="flex hidden md:flex flex-col pt-8 pl-3.5 pr-8">
 
       {/* top side */}
 
