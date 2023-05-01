@@ -12,8 +12,9 @@ function Feed() {
             <Posts />
         </section>
 
-        <section>
+        <section className=''>
             {/* mini profli */}
+
         </section>
     </div>
   )
