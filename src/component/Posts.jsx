@@ -41,8 +41,9 @@ function Posts() {
       },
     ];
   return (
-    <div className='mt-[3rem]  max-w-[25rem] mx-auto px-4'>
-        {
+    <div className='mt-[3rem]   max-w-[25rem] mx-auto px-4'>
+      <div className="">
+         {
             posts.map((post) => (
                 <Post
                 key={post.id}
@@ -55,7 +56,9 @@ function Posts() {
                 />
             ))
         }
-        
+      </div>
+       
+       
     </div>
   )
 }

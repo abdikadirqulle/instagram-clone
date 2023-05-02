@@ -4,18 +4,15 @@ import Feed from './component/Feed';
 
  const App = () => {
   return (
-    <div className="grid grid-cols-6 ">
+    <div className="flex ">
       {/* side Bar */}
-      <div className="  fixed border border-1 border-r-[#DBDBDB] ">
+      <div className="   border border-1 w-[15.5rem] border-r-[#DBDBDB] ">
         <Header />
       </div>
       {/* center Bar */}
-      <div className="  ml-[15rem]  h-screen col-span-5 ">
-       
+      <div className="    h-screen  ">
         <Feed />
       </div>
-
-      {/* right side Bar */}
     </div>
   );
 }

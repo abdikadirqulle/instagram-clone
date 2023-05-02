@@ -19,7 +19,7 @@ function Stroies() {
     console.log(Stroies)
   return (
     <div>
-      <div className="flex space-x-3  mr-1  rounded-lg overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-300">
+      <div className="flex space-x-3  mr-1 w-[30rem] rounded-lg overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-300">
         {Stroies.map((profile) => (
           <>
             <Story
