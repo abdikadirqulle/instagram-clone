@@ -1,11 +1,13 @@
 import React from 'react'
 import {BsEmojiSmile} from 'react-icons/bs'
 import {IoMdCheckmarkCircle} from "react-icons/io"
-import {TfiLayoutMenuSeparated} from "react-icons/tfi"
 import three from '../images/three dot.png'
 import IconsBar from './IconsBar';
 
 function Post({username,comment,postPhoto,profilePid,likes, caption}) {
+
+  // const [showModel,setShowModel] =  
+
   return (
     <div className="flex mb-4  flex-col">
       <div className="flex justify-between items-center ">
@@ -31,6 +33,7 @@ function Post({username,comment,postPhoto,profilePid,likes, caption}) {
         <div className="">
           <img
             src={three}
+            // onClick={}
             className="hover:scale-75 duration-100 w-5 cursor-pointer"
           />
         </div>
@@ -43,6 +46,7 @@ function Post({username,comment,postPhoto,profilePid,likes, caption}) {
 
       {/* qeybta hoose ee iconska */}
       <IconsBar />
+      {/* lsBar />
       {/* likes */}
       <div className="m-0">
         <p className="font-semibold text-sm">{likes} likes</p>

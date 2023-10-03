@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import profile from '../images/pro.jpg'
 import postPhoto from '../images/moha.jpg'
 import Ak47 from '../images/Ak47.jpg'
@@ -8,6 +8,7 @@ import englineer from '../images/englineer.jpg'
 import Post from './Post'
 
 function Posts() {
+  // const [data,setData] = useState([])
     const posts = [
       {
         id: "123",
@@ -40,8 +41,15 @@ function Posts() {
         comment : "99"
       },
     ];
+
+  //  useEffect(()=> {
+  //   fetch('https://jsonplaceholder.typicode.com/photos/10')
+  // .then((response) => response.json())
+  // .then((json) => setData(json));
+  // console.log(data)
+  //  })
   return (
-    <div className='mt-[3rem]   max-w-[25rem] mx-auto px-4'>
+    <div className='mt-[3rem]  px-4'>
       <div className="">
          {
             posts.map((post) => (
@@ -53,6 +61,7 @@ function Posts() {
                 caption={post.caption}
                 likes={post.likes}
                 comment={post.comment}
+                // {...post}
                 />
             ))
         }

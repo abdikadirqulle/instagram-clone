@@ -9,3 +9,12 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+@layer components {
+    .menu-bar {
+        @apply w-full rounded-md hover:bg-gray-100 flex items-center py-3 px-2 space-x-2 gap-2 cursor-pointer
+    }
+    .menubar-icons {
+        @apply w-6 h-6
+    }
+}

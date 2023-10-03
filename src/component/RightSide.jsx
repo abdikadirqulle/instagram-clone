@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '../images/profile.jpg'
 import Friends from './Friends';
+// import {profileMenu} from './model/MenuModel'
 const RightSide = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const RightSide = () => {
               <h2 className="text-gray-500 font-normal text-sm">
                 Abdikadir Abdirahman
               </h2>
+            
             </div>
           </div>
           <div className="">

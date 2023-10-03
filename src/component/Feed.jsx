@@ -5,19 +5,24 @@ import RightSide from './RightSide';
 
 function Feed() {
   return (
-    <div className="mt-10 flex ">
-      <section className=" mt-4">
+   <div className="">
+   <div className="relative mt-9 flex gap-9 ">
+      <section className="pt-4 max-w-[40rem]">
         {/* stories */}
         <Stroies />
         {/* Posts */}
+        <div className='  max-w-[25rem] mx-auto'>
         <Posts />
-      </section>
+        </div>
+      
 
-      <section className=" w-[30rem] absolute right-0 h-screen ">
+      </section>
+      <section className="hidden xl:block">
         {/* mini profli */}
         <RightSide />
       </section>
     </div>
+   </div>
   );
 }
 
